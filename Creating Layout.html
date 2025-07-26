@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #0e0d0d;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            padding: 40px 20px; /* Add padding for better gradient visibility */
+            margin: 0;
+            /* Gradient Background */
+            background: linear-gradient(to right, #ffffff, #87CEEB); 
+        }
+        nav {
+           background: linear-gradient(to right, #ffffff, #87CEEB);
+            color: rgb(26, 23, 23);
+            padding: 15px 0;
+            text-align: center;
+            
+        }
+        nav a {
+            color: rgb(15, 15, 15);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            
+        }
+        table {
+            
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+             background-color: rgb(10, 10, 85);
+            
+            color: #fdfcfc;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>My Portfolio</h1>
+    <nav>
+    <a href="#home">Home</a></li>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    </nav>
+    
+    <div>
+        <h2>Welcome to My Portfolio</h2>
+        <p>This Portfolio showcase my projects and provides information about my background and Contact details</p>
+    </div>
+
+    <div>
+        <h2>About</h2>
+        <p>Hello I'm Web Developer passionate about building dynamic and responsive website. I enjoy creating user friendly interfaces and working on challenging projects</p>
+    </div>
+
+    <div>
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Project Alpha</td>
+                <td>A Web based tool for tracking project progress and managing tasks</td>
+                <td>2023</td>
+            </tr>
+             <tr>
+                <td>Project Site</td>
+                <td>A Personal website showcasing my work and skills as per Web Developer</td>
+                <td>2024</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Contact</h2>
+        <label for ="Name">Name:</label>
+        <input type="text" id="name" name="user_name" required>
+        </div>
+        <div>
+            <label for ="email">Email:</label>
+        <input type="email" id="email" name="user_email" required>
+
+        </div>
+        
+        <div>
+            <label for ="message">Message:</label>
+        <textarea id="message" name="user_message" required></textarea>
+
+        </div>
+        <div>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
